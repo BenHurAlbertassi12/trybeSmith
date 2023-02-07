@@ -5,11 +5,7 @@ import connection from '../models/connection';
 import UserModel from '../models/user';
 
 class UserService {
-  public model: UserModel;
-
-  constructor() {
-    this.model = new UserModel(connection);
-  }
+  userModel = new UserModel(connection);
 
   public async create(user: IUser): Promise<IToken> {
     const token = jwt.sign(
@@ -20,7 +16,7 @@ class UserService {
       process.env.JWT_SECRET as string,
     );
 
-    await this.model.create(user);
+    await this.userModel.create(user);
     return { token };
   }
 }
