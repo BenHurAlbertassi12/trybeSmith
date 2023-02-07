@@ -14,7 +14,7 @@ export async function create(product: Product): Promise<Product> {
 
 export async function getAll(): Promise<Product[]> {
   const [products] = await connection.execute(
-    'SELECT * FROM Trybesmith.Products',
+    'SELECT * FROM Trybesmith.products',
   );
 
   return products as Product[];

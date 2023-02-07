@@ -1,2 +1,2 @@
-Model Create
+praticamente tudo criado a partir desse repositório nos req 1 e 2
 https://github.com/tryber/praticando-typescript-express/blob/main/atividade-4/src/models/restaurantModel.ts
