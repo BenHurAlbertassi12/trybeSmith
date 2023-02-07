@@ -1,0 +1,2 @@
+Model Create
+https://github.com/tryber/praticando-typescript-express/blob/main/atividade-4/src/models/restaurantModel.ts
